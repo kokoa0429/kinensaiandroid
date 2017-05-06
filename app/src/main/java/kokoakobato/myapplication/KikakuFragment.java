@@ -45,8 +45,9 @@ public class KikakuFragment extends ListFragment {
             list.add(item);
         }
 */
+
         KikakuListAdapter adapter =
-                new KikakuListAdapter(getActivity(), R.layout.list_view_image_item, list);
+                new KikakuListAdapter(getActivity(), R.layout.list_view_image_item, /* php get */);
 
         setListAdapter(adapter);
 
