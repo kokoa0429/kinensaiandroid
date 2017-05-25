@@ -4,20 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="kokoakobato.myapplication.MainActivity">
+    tools:context="kokoakobato.myapplication.MainActivity"
+    tools:layout_editor_absoluteY="25dp"
+    tools:layout_editor_absoluteX="0dp">
 
     <LinearLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:orientation="vertical"
-        android:layout_marginRight="0dp"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="0dp"
         android:layout_marginLeft="0dp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="0dp"
         android:layout_marginTop="0dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="0dp">
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -35,7 +37,8 @@
                 android:id="@+id/button17"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_weight="3" />
+                android:layout_weight="3"
+                android:onClick="KikakuButtonClick" />
 
             <Button
                 android:id="@+id/Setting"
@@ -56,7 +59,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="3"
-                android:onClick="KikakuButtonClick" />
+                android:onClick="StageButtonClick" />
 
             <Button
                 android:id="@+id/KoudouButton"
@@ -76,8 +79,7 @@
                 android:id="@+id/button"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_weight="5"
-                android:text="Button" />
+                android:layout_weight="5" />
 
             <Button
                 android:id="@+id/StageButton"

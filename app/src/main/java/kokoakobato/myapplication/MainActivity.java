@@ -17,6 +17,11 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(MainActivity.this,KikakuActivity.class);
         startActivity(i);
     }
+    public void StageButtonClick (View v){
+        Intent i = new Intent(MainActivity.this,KikakuActivity.class);
+        startActivity(i);
+    }
+
     public void SettingButtonClick (View v){
         Intent i = new Intent(MainActivity.this,SettingsActivity.class);
         startActivity(i);

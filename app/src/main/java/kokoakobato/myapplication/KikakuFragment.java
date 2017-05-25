@@ -34,8 +34,7 @@ public class KikakuFragment extends ListFragment {
                         android.R.layout.simple_list_item_1,
                         MyList.Data(getArguments().getInt(ARG_SECTION_NUMBER, 0))
                 );
-                */
-/*
+*/
         List<ListItem> list = new ArrayList<ListItem>();
 
         for (int i = 1; i < 6; i++) {
@@ -44,10 +43,10 @@ public class KikakuFragment extends ListFragment {
             item.setClassImageId(R.drawable.ic_notifications_black_24dp);
             list.add(item);
         }
-*/
+
 
         KikakuListAdapter adapter =
-                new KikakuListAdapter(getActivity(), R.layout.list_view_image_item, /* php get */);
+                new KikakuListAdapter(getActivity(), R.layout.list_view_image_item,list);
 
         setListAdapter(adapter);
 
